@@ -41,7 +41,7 @@ pub fn walk_directory(
 /// # Errors
 ///
 /// The function returns an error if writing to the file fails.
-pub fn run_opera1tion(path: &path::PathBuf, key: &str) -> result::Result<(), io::Error> {
+pub fn run_operation(path: &path::PathBuf, key: &str) -> result::Result<(), io::Error> {
     let contents: Vec<u8> = fs::read(&path).expect("Error reading file");
     let output: Vec<u8> = contents
         .iter()
